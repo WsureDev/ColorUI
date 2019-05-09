@@ -15,6 +15,8 @@ Vue.component('cu-custom',cuCustom)
 
 Vue.config.productionTip = false
 
+Vue.prototype.server = 'https://zhshy.top/wf/dev/'
+
 App.mpType = 'app'
 
 const app = new Vue({

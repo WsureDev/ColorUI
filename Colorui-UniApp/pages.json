@@ -159,7 +159,13 @@
 				"navigationBarTitleText": ""
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/basics/sortie",
+            "style" : {
+				"enablePullDownRefresh": true
+			}
+        }
+    ],
 	"globalStyle": {
 		"mp-alipay": {
 			/* 支付宝小程序特有相关 */

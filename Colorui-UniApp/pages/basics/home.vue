@@ -79,6 +79,12 @@
 						name: 'loading',
 						color: 'green',
 						icon: 'loading2'
+					},
+					{
+						title: '突击',
+						name: 'sortie',
+						color: 'grey',
+						icon: 'hot'
 					}
 				],
 			};

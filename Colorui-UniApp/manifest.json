@@ -1,9 +1,9 @@
 {
-    "name" : "ColorUi for UniApp",
-    "appid" : "",
-    "description" : "",
-    "versionName" : "ColorUi for UniApp 2.1.4",
-    "versionCode" : 214,
+    "name" : "Warframe Nymph",
+    "appid" : "__UNI__984B0B5",
+    "description" : "Nymph",
+    "versionName" : "0.0.1",
+    "versionCode" : 1,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */
@@ -48,10 +48,11 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wxde5a90af8cca4adb",
         "setting" : {
-            "urlCheck" : false,
-            "es6" : true
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : true
         }
     },
     "h5" : {
