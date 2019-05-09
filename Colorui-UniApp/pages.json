@@ -165,6 +165,18 @@
 				"enablePullDownRefresh": true
 			}
         }
+        ,{
+            "path" : "pages/basics/fissures",
+            "style" : {
+				"enablePullDownRefresh": true
+			}
+        }
+        ,{
+            "path" : "pages/basics/invasions",
+            "style" : {
+				"enablePullDownRefresh": true
+			}
+        }
     ],
 	"globalStyle": {
 		"mp-alipay": {

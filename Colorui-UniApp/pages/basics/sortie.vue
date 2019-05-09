@@ -76,7 +76,7 @@
 				color:['green','blue','red'],
 				img: 'https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg',
 				url: '',
-				process:100
+				process:0
 			}
 		},
 		computed:{

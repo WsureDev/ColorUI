@@ -85,6 +85,18 @@
 						name: 'sortie',
 						color: 'grey',
 						icon: 'hot'
+					},
+					{
+						title: '裂缝',
+						name: 'fissures',
+						color: 'grey',
+						icon: 'btn'
+					},
+					{
+						title: '入侵',
+						name: 'invasions',
+						color: 'grey',
+						icon: 'btn'
 					}
 				],
 			};
