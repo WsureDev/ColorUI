@@ -8,31 +8,29 @@
 						<view class="text-left">{{res?res.boss:'加载中...'}}</view>
 						<view class="text-right">{{res?res.faction:'加载中...'}}</view>
 					</view>
-					
 				</view>
 			</view>
 			<view class="cu-modal" :class="modalName=='DialogModal1'?'show':''">
 				<view class="cu-dialog">
 					<view class="cu-bar bg-white justify-end">
-						<view class="content">Modal标题</view>
+						<view class="content">{{res.boss?res.boss:'加载中...'}}</view>
 						<view class="action" @tap="hideModal">
 							<text class="cuIcon-close text-red"></text>
 						</view>
 					</view>
 					<view class="padding-xl">
-						Modal 内容。
+						{{res?res.faction:'加载中...'}}
 					</view>
 					<view class="cu-bar bg-white justify-end">
 						<view class="action">
-							<button class="cu-btn line-green text-green" @tap="hideModal">取消</button>
+							<!-- <button class="cu-btn line-green text-green" @tap="hideModal">取消</button> -->
 							<button class="cu-btn bg-green margin-left" @tap="hideModal">确定</button>
-
 						</view>
 					</view>
 				</view>
 			</view>
 			<view class="cu-card case">
-				<view class="cu-item cu-timeline bg-white shadow-lg">
+				<view class="cu-item cu-timeline bg-white shadow shadow-blur">
 					<view class="cu-time text-red cuIcon-hot">
 						节点
 					</view>
@@ -46,7 +44,7 @@
 				</view>
 			</view>
 			<view class="cu-card case">
-				<view class="cu-item shadow-lg">
+				<view class="cu-item bg-white shadow shadow-lg">
 					<view class="cu-bar bg-white solid-bottom margin-top">
 						<view class="action">
 							<text class="cuIcon-title text-blue"></text>{{res?res.eta:'加载中...'}}
@@ -69,10 +67,10 @@
 	export default {
 		data() {
 			return {
-				modalName: null,
+				modalName: '',
 				isInit:false,
 				isFail:false,
-				res:null,
+				res:{},
 				color:['green','blue','red'],
 				img: 'https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg',
 				url: '',
@@ -90,7 +88,7 @@
 					title:'正在填装...'
 				})
 				uni.request({
-					url:this.server+'sortie',
+					url:this.server.api.wf+'sortie',
 					success: (res) => {
 						this.res = res.data;
 						this.process = utils.getProcess(this.res.activation,this.res.expiry);
